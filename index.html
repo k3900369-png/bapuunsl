@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDesk API Bridge</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.15);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 480px;
+            text-align: center;
+            backdrop-filter: blur(12px);
+        }
+        .logo { font-size: 48px; margin-bottom: 16px; }
+        h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .subtitle { color: #94a3b8; font-size: 14px; margin-bottom: 24px; }
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #10b981;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .dot {
+            width: 8px; height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .info { margin-top: 24px; color: #64748b; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">🏢</div>
+        <h1>ProDesk API Bridge</h1>
+        <p class="subtitle">Halaman ini digunakan sebagai penghubung konfigurasi API untuk aplikasi mobile ProDesk.</p>
+        <div class="status">
+            <span class="dot"></span>
+            API Bridge Active
+        </div>
+        <p class="info">Endpoint: <code>/api-config.json</code></p>
+    </div>
+</body>
+</html>
